@@ -1,0 +1,45 @@
+/* Base theme variables */
+:root {
+  --transition-duration: 0.3s;
+  --card-shadow-light: 0 8px 20px rgba(0, 0, 0, 0.15);
+  --card-shadow-dark: 0 8px 20px rgba(0, 0, 0, 0.15);
+  --card-shadow-hover-light: 0 12px 28px rgba(0, 0, 0, 0.25);
+  --card-shadow-hover-dark: 0 12px 28px rgb(255, 255, 255);
+  --card-hover-transform: scale(1.05);
+  --card-hover-transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --image-hover-transform: scale(1.1);
+  --image-hover-transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Global transitions for theme switching */
+body {
+  transition: background-color var(--transition-duration) ease;
+}
+
+[data-theme="dark"] {
+  background-color: var(--background-dark-default, #1e1e1e);
+}
+
+.MuiPaper-root,
+.MuiAppBar-root,
+.MuiCard-root,
+.MuiToolbar-root,
+.MuiIconButton-root,
+.MuiButton-root,
+.MuiTypography-root {
+  transition: all var(--transition-duration) ease !important;
+}
+
+/* Improved focus styles */
+:focus {
+  outline: none;
+}
+
+.MuiButtonBase-root:focus-visible {
+  outline: 2px solid var(--primary-main, #8c785a);
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .MuiButtonBase-root:focus-visible {
+  outline: 2px solid var(--primary-dark-main, #bead99);
+}
