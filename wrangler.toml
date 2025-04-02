@@ -1,3 +1,7 @@
+name = "furniture-website"
+main = "index.js"
+compatibility_date = "2023-12-01"
+
 [build]
 command = "npm run build"
 
