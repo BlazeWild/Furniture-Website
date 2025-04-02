@@ -23,10 +23,10 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 const featuredProducts = [
   {
     id: 1,
-    title: "Modern Sofa",
+    title: "Modern TV Unit",
     image: "/featuredProd/tv_cabinet.jpg",
     price: "Rs. 45,000",
-    path: "/product/modern-sofa",
+    path: "/product/modern-tv-unit",
   },
   {
     id: 2,

@@ -3,51 +3,51 @@ import CategoryLayout from "../components/CategoryLayout";
 
 const livingRoomProducts = [
   {
-    id: 1,
+    id: "modern-sofa",
     name: "Modern Sofa",
     description:
       "Elegant and comfortable 3-seater sofa with premium upholstery and sturdy wooden frame.",
-    price: 1299.99,
+    price: 75000,
     image: "/categories/living-room/sofa.jpg",
   },
   {
-    id: 2,
+    id: "coffee-table",
     name: "Coffee Table",
     description:
       "Contemporary coffee table with glass top and metal frame, perfect for modern living spaces.",
-    price: 299.99,
+    price: 18750,
     image: "/categories/living-room/coffee-table.jpg",
   },
   {
-    id: 3,
+    id: "tv-unit",
     name: "TV Unit",
     description:
       "Stylish TV unit with built-in storage and cable management system.",
-    price: 399.99,
+    price: 45000,
     image: "/categories/living-room/tv-unit.jpg",
   },
   {
-    id: 4,
-    name: "Accent Chair",
+    id: "accent-chair",
+    name: "Accent Armchair",
     description:
       "Comfortable accent chair with premium fabric and ergonomic design.",
-    price: 499.99,
+    price: 22500,
     image: "/categories/living-room/accent-chair.jpg",
   },
   {
-    id: 5,
+    id: "bookshelf",
     name: "Bookshelf",
     description:
       "Modern bookshelf with adjustable shelves and built-in lighting.",
-    price: 599.99,
+    price: 35000,
     image: "/categories/living-room/bookshelf.jpg",
   },
   {
-    id: 6,
+    id: "area-rug",
     name: "Area Rug",
     description:
       "Luxurious area rug with modern geometric pattern and soft texture.",
-    price: 199.99,
+    price: 12000,
     image: "/categories/living-room/area-rug.jpg",
   },
 ];

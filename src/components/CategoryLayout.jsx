@@ -172,7 +172,7 @@ const CategoryLayout = ({ title, description, products }) => {
                           fontSize: "1rem",
                         }}
                       >
-                        ${product.price}
+                        Rs. {product.price.toLocaleString("en-IN")}
                       </Typography>
                       <Button
                         variant="contained"

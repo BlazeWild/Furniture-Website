@@ -3,48 +3,48 @@ import CategoryLayout from "../components/CategoryLayout";
 
 const bedroomProducts = [
   {
-    id: 1,
-    name: "Queen Size Bed",
+    id: "king-size-bed",
+    name: "King Size Bed",
     description:
-      "Elegant queen size bed with upholstered headboard and sturdy wooden frame.",
-    price: 999.99,
+      "Elegant king size bed with upholstered headboard and sturdy wooden frame.",
+    price: 52000,
     image: "/categories/bedroom/bed.jpg",
   },
   {
-    id: 2,
+    id: "nightstand",
     name: "Nightstand",
     description:
       "Modern nightstand with built-in USB ports and wireless charging pad.",
-    price: 199.99,
+    price: 12500,
     image: "/categories/bedroom/nightstand.jpg",
   },
   {
-    id: 3,
+    id: "dresser",
     name: "Dresser",
     description: "Spacious dresser with soft-close drawers and mirror set.",
-    price: 699.99,
+    price: 42000,
     image: "/categories/bedroom/dresser.jpg",
   },
   {
-    id: 4,
+    id: "wardrobe",
     name: "Wardrobe",
     description: "Full-size wardrobe with sliding doors and built-in lighting.",
-    price: 1299.99,
+    price: 65000,
     image: "/categories/bedroom/wardrobe.jpg",
   },
   {
-    id: 5,
+    id: "vanity-set",
     name: "Vanity Set",
     description: "Elegant vanity set with stool and LED mirror.",
-    price: 499.99,
+    price: 28500,
     image: "/categories/bedroom/vanity.jpg",
   },
   {
-    id: 6,
+    id: "bedside-lamp",
     name: "Bedside Lamp",
     description:
       "Modern LED bedside lamp with adjustable brightness and color temperature.",
-    price: 79.99,
+    price: 4500,
     image: "/categories/bedroom/lamp.jpg",
   },
 ];
