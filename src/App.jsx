@@ -17,6 +17,7 @@ import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 import "./theme.css"; // Import global theme styles
 import ProductDetail from "./pages/ProductDetail";
 import About from "./pages/About";
+import CategoriesPage from "./pages/CategoriesPage";
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function AppContent() {
             <Route path="/living-room" element={<LivingRoom />} />
             <Route path="/bedroom" element={<Bedroom />} />
             <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/categories" element={<Categories />} />
+            <Route path="/categories" element={<CategoriesPage />} />
             <Route path="/about" element={<About />} />
           </Routes>
           <Footer />

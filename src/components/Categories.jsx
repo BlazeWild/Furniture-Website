@@ -8,11 +8,10 @@ import {
   Typography,
   Container,
   useTheme as useMuiTheme,
-  Button,
 } from "@mui/material";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTheme } from "../contexts/ThemeContext";
-import { ArrowBack } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 const categories = [
   {
@@ -44,11 +43,6 @@ const categories = [
 const Categories = () => {
   const muiTheme = useMuiTheme();
   const { isDarkMode, mode } = useTheme();
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  // Check if this component is being used as a standalone page
-  const isStandalonePage = location.pathname === "/categories";
 
   return (
     <Box
@@ -59,34 +53,10 @@ const Categories = () => {
           mode === "dark"
             ? "1px solid rgba(255, 255, 255, 0.05)"
             : "1px solid rgba(0, 0, 0, 0.05)",
-        minHeight: isStandalonePage ? "100vh" : "auto",
       }}
       data-theme={mode}
     >
       <Container maxWidth="lg">
-        {isStandalonePage && (
-          <Button
-            startIcon={<ArrowBack />}
-            onClick={() => navigate("/")}
-            sx={{
-              mb: 2,
-              color: muiTheme.palette.mode === "dark" ? "#f0f0f0" : "#333",
-              textTransform: "none",
-              fontSize: "0.9rem",
-              py: 0.5,
-              "&:hover": {
-                backgroundColor: "transparent",
-              },
-              "&:focus": {
-                outline: "none",
-                backgroundColor: "transparent",
-              },
-            }}
-          >
-            Back to Home
-          </Button>
-        )}
-
         <Typography
           variant="h3"
           component="h2"
