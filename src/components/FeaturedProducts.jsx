@@ -47,7 +47,7 @@ const featuredProducts = [
     title: "King Size Bed",
     image: "/featuredProd/bed.jpg",
     price: "Rs. 52,000",
-    path: "/product/king-size-bed",
+    path: "/product/featured-king-bed",
   },
   {
     id: 5,

@@ -82,7 +82,7 @@ const ProductDetail = () => {
         weight: "15 kg",
       },
     },
-    "king-size-bed": {
+    "featured-king-bed": {
       id: 4,
       name: "King Size Bed",
       description:
@@ -210,6 +210,27 @@ const ProductDetail = () => {
         weight: "25 kg",
       },
     },
+    "coffee-table": {
+      id: "coffee-table",
+      name: "Coffee Table",
+      description:
+        "Contemporary coffee table with glass top and metal frame, perfect for modern living spaces.",
+      price: "Rs. 18,750",
+      image: "/categories/living-room/coffee-table.jpg",
+      features: [
+        "Contemporary design",
+        "Glass top with metal frame",
+        "Sturdy construction",
+        "Easy to clean",
+        "2-year warranty",
+      ],
+      specifications: {
+        dimensions: "L: 110cm x W: 60cm x H: 45cm",
+        material: "Glass and metal",
+        color: "Clear glass with black frame",
+        weight: "25 kg",
+      },
+    },
     bookshelf: {
       id: "bookshelf",
       name: "Bookshelf",
@@ -254,6 +275,27 @@ const ProductDetail = () => {
     },
 
     // Bedroom Category Products
+    "king-size-bed": {
+      id: "king-size-bed",
+      name: "King Size Bed",
+      description:
+        "Elegant king size bed with upholstered headboard and sturdy wooden frame.",
+      price: "Rs. 52,000",
+      image: "/categories/bedroom/bed.jpg",
+      features: [
+        "Premium quality materials",
+        "Sturdy construction",
+        "Elegant headboard design",
+        "Spacious sleeping area",
+        "5-year warranty",
+      ],
+      specifications: {
+        dimensions: "L: 210cm x W: 190cm x H: 110cm",
+        material: "Solid wood frame with premium finish",
+        color: "Rich Mahogany",
+        weight: "90 kg",
+      },
+    },
     nightstand: {
       id: "nightstand",
       name: "Nightstand",
