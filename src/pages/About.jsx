@@ -65,12 +65,14 @@ const About = () => {
             <Box
               component="img"
               src="/logo.png"
-              alt="Furnish Logo"
+              alt="Dhurba Furniture Logo"
               sx={{
                 height: 80,
+                width: 80,
                 marginRight: 3,
                 display: "block",
                 borderRadius: "50%",
+                objectFit: "cover",
                 boxShadow: isDarkMode
                   ? "0 8px 32px rgba(0, 0, 0, 0.3)"
                   : "0 8px 32px rgba(0, 0, 0, 0.1)",

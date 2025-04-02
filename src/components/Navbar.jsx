@@ -120,12 +120,14 @@ const Navbar = () => {
           <Box
             component="img"
             src="/logo.png"
-            alt="Furnish Logo"
+            alt="Dhurba Furniture Logo"
             sx={{
               height: 30,
+              width: 30,
               marginRight: 1,
               display: "block",
               borderRadius: "50%",
+              objectFit: "cover",
             }}
           />
           <Typography
@@ -277,12 +279,14 @@ const Navbar = () => {
           <Box
             component="img"
             src="/logo.png"
-            alt="Furnish Logo"
+            alt="Dhurba Furniture Logo"
             sx={{
               height: 50,
+              width: 50,
               marginRight: 2,
               display: "block",
               borderRadius: "50%",
+              objectFit: "cover",
             }}
           />
           <Typography

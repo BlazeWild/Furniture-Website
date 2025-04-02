@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- This circle defines a circular clipping mask for our logo -->
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="24" cy="24" r="24" />
+    </clipPath>
+  </defs>
+  
+  <!-- This will be our placeholder - a colored circle that matches our brand -->
+  <circle cx="24" cy="24" r="24" fill="#4A321F"/>
+  
+  <!-- The text "D" for Dhurba -->
+  <text x="24" y="34" font-family="Arial" font-size="28" font-weight="bold" fill="#E8C39E" text-anchor="middle">D</text>
+</svg> 
