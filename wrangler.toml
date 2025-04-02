@@ -1,6 +1,6 @@
 [build]
 command = "npm run build"
-cwd = "."
+publish = "dist"
 
 [site]
-bucket = "./dist" 
+bucket = "dist" 
