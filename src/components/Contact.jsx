@@ -163,13 +163,14 @@ const Contact = () => {
                   }}
                 >
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456805007344!2d85.284000!3d27.704000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190a74aa1cd1%3A0x971b77f2d7c75800!2sBishal%20Bazar%20Complex!5e0!3m2!1sen!2snp!4v1645000000000!5m2!1sen!2snp"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.277539475!2d85.27549461506272!3d27.682486682789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1956a0db0a2f%3A0x8ee9d9f56cf04f1c!2sDhurba%20Furniture!5e0!3m2!1sen!2snp!4v1651234567890!5m2!1sen!2snp"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
+                    title="Dhurba Furniture Location"
                   ></iframe>
                 </Box>
               </CardContent>

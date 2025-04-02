@@ -37,7 +37,7 @@ const CategoryLayout = ({ title, description, products }) => {
       <Container maxWidth="lg">
         <Button
           startIcon={<ArrowBack />}
-          onClick={() => navigate("/")}
+          onClick={() => navigate(-1)}
           sx={{
             mb: 2,
             color: theme.palette.mode === "dark" ? "#f0f0f0" : "#333",
@@ -53,7 +53,7 @@ const CategoryLayout = ({ title, description, products }) => {
             },
           }}
         >
-          Back to Home
+          Back
         </Button>
 
         <motion.div
