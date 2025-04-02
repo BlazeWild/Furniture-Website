@@ -163,36 +163,42 @@ const FeaturedProducts = () => {
 
   return (
     <Box
-      className="featured-products"
-      data-theme={mode}
       sx={{
-        "--featured-bg": mode === "light" ? "#ffffff" : null,
-        "--featured-bg-dark": mode === "dark" ? "#252525" : null,
-        "--title-color": mode === "light" ? "#333" : null,
-        "--title-color-dark": mode === "dark" ? "#f0f0f0" : null,
-        "--accent-color": muiTheme.palette.primary.main,
-        "--arrow-bg": mode === "light" ? "#f8f8f8" : null,
-        "--arrow-bg-dark": mode === "dark" ? "#2a2a2a" : null,
-        "--arrow-hover-bg": mode === "light" ? "#efefef" : null,
-        "--arrow-hover-bg-dark": mode === "dark" ? "#333" : null,
-        "--card-bg": muiTheme.palette.background.paper,
-        "--card-bg-dark": mode === "dark" ? "#2a2a2a" : null,
-        "--product-title": muiTheme.palette.text.primary,
-        "--product-title-dark": mode === "dark" ? "#f0f0f0" : null,
-        "--product-price": mode === "light" ? "#8c785a" : null,
-        "--product-price-dark": mode === "dark" ? "#b4a88c" : null,
-        "--dot-bg": mode === "light" ? "#ddd" : null,
-        "--dot-bg-dark": mode === "dark" ? "#444" : null,
-        "--dot-active": muiTheme.palette.primary.main,
-        "--dot-active-dark": mode === "dark" ? "#b4a88c" : null,
-        "--card-shadow-light": "var(--card-shadow-light)",
-        "--card-shadow-dark": "var(--card-shadow-dark)",
-        "--card-shadow-hover-light": "var(--card-shadow-hover-light)",
-        "--card-shadow-hover-dark": "var(--card-shadow-hover-dark)",
+        py: 8,
+        backgroundColor: muiTheme.palette.background.default,
+        borderTop:
+          mode === "dark"
+            ? "1px solid rgba(255, 255, 255, 0.05)"
+            : "1px solid rgba(0, 0, 0, 0.05)",
       }}
+      data-theme={mode}
     >
       <Container maxWidth="lg">
-        <Typography variant="h3" component="h2" className="featured-title">
+        <Typography
+          variant="h3"
+          component="h2"
+          align="center"
+          sx={{
+            mb: 6,
+            fontWeight: "bold",
+            color: muiTheme.palette.text.primary,
+            position: "relative",
+            display: "inline-block",
+            left: "50%",
+            transform: "translateX(-50%)",
+            paddingBottom: "15px",
+            "&::after": {
+              content: '""',
+              position: "absolute",
+              bottom: 0,
+              left: "50%",
+              transform: "translateX(-50%)",
+              width: "80px",
+              height: "2px",
+              backgroundColor: muiTheme.palette.primary.main,
+            },
+          }}
+        >
           Featured Products
         </Typography>
 

@@ -16,7 +16,6 @@ import Home from "./pages/Home";
 import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 import "./theme.css"; // Import global theme styles
 import ProductDetail from "./pages/ProductDetail";
-import CategoriesPage from "./pages/Categories";
 import About from "./pages/About";
 
 function App() {
@@ -48,7 +47,7 @@ function AppContent() {
             <Route path="/living-room" element={<LivingRoom />} />
             <Route path="/bedroom" element={<Bedroom />} />
             <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/categories" element={<CategoriesPage />} />
+            <Route path="/categories" element={<Categories />} />
             <Route path="/about" element={<About />} />
           </Routes>
           <Footer />

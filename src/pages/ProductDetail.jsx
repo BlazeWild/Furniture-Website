@@ -428,13 +428,23 @@ const ProductDetail = () => {
       <Container maxWidth="lg">
         <Button
           startIcon={<ArrowBack />}
-          onClick={() => navigate(-1)}
+          onClick={() => navigate("/")}
           sx={{
-            mb: 4,
+            mb: 2,
             color: theme.palette.mode === "dark" ? "#f0f0f0" : "#333",
+            textTransform: "none",
+            fontSize: "0.9rem",
+            py: 0.5,
+            "&:hover": {
+              backgroundColor: "transparent",
+            },
+            "&:focus": {
+              outline: "none",
+              backgroundColor: "transparent",
+            },
           }}
         >
-          Back to Products
+          Back to Home
         </Button>
 
         <Grid container spacing={6}>

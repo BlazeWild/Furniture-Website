@@ -7,14 +7,18 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Button,
   useTheme as useMuiTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme as useCustomTheme } from "../contexts/ThemeContext";
+import { ArrowBack } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
-  const muiTheme = useMuiTheme();
-  const { isDarkMode } = useTheme();
+  const theme = useMuiTheme();
+  const { mode, isDarkMode } = useCustomTheme();
+  const navigate = useNavigate();
 
   const features = [
     {
@@ -41,7 +45,7 @@ const About = () => {
     <Box
       sx={{
         py: 8,
-        backgroundColor: muiTheme.palette.background.default,
+        backgroundColor: theme.palette.background.default,
         minHeight: "100vh",
       }}
     >
@@ -83,7 +87,7 @@ const About = () => {
               component="h1"
               sx={{
                 fontWeight: "bold",
-                color: muiTheme.palette.text.primary,
+                color: theme.palette.text.primary,
                 fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
               }}
             >
@@ -93,7 +97,7 @@ const About = () => {
           <Typography
             variant="h5"
             sx={{
-              color: muiTheme.palette.text.secondary,
+              color: theme.palette.text.secondary,
               maxWidth: "800px",
               mx: "auto",
             }}
@@ -111,7 +115,7 @@ const About = () => {
                 sx={{
                   mb: 4,
                   fontWeight: "bold",
-                  color: muiTheme.palette.text.primary,
+                  color: theme.palette.text.primary,
                 }}
               >
                 Our Story
@@ -120,7 +124,7 @@ const About = () => {
                 variant="body1"
                 sx={{
                   mb: 3,
-                  color: muiTheme.palette.text.secondary,
+                  color: theme.palette.text.secondary,
                   lineHeight: 1.8,
                   textAlign: "justify",
                 }}
@@ -134,7 +138,7 @@ const About = () => {
                 variant="body1"
                 sx={{
                   mb: 3,
-                  color: muiTheme.palette.text.secondary,
+                  color: theme.palette.text.secondary,
                   lineHeight: 1.8,
                   textAlign: "justify",
                 }}
@@ -185,7 +189,7 @@ const About = () => {
               mb: 6,
               fontWeight: "bold",
               textAlign: "center",
-              color: muiTheme.palette.text.primary,
+              color: theme.palette.text.primary,
             }}
           >
             Why Choose Us
@@ -206,7 +210,7 @@ const About = () => {
                 <Card
                   sx={{
                     height: "100%",
-                    backgroundColor: muiTheme.palette.background.paper,
+                    backgroundColor: theme.palette.background.paper,
                     boxShadow: isDarkMode
                       ? "0 6px 16px rgba(0, 0, 0, 0.3)"
                       : "0 6px 16px rgba(0, 0, 0, 0.15)",
@@ -226,7 +230,7 @@ const About = () => {
                       component="h3"
                       sx={{
                         fontWeight: "bold",
-                        color: muiTheme.palette.text.primary,
+                        color: theme.palette.text.primary,
                         fontSize: {
                           xs: "1.25rem",
                           sm: "1.25rem",
@@ -239,7 +243,7 @@ const About = () => {
                     <Typography
                       variant="body2"
                       sx={{
-                        color: muiTheme.palette.text.secondary,
+                        color: theme.palette.text.secondary,
                         lineHeight: 1.6,
                         fontSize: "0.875rem",
                       }}

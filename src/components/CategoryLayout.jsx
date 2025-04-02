@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { ArrowBack } from "@mui/icons-material";
 
 const CategoryLayout = ({ title, description, products }) => {
   const theme = useTheme();
@@ -34,6 +35,27 @@ const CategoryLayout = ({ title, description, products }) => {
       }}
     >
       <Container maxWidth="lg">
+        <Button
+          startIcon={<ArrowBack />}
+          onClick={() => navigate("/")}
+          sx={{
+            mb: 2,
+            color: theme.palette.mode === "dark" ? "#f0f0f0" : "#333",
+            textTransform: "none",
+            fontSize: "0.9rem",
+            py: 0.5,
+            "&:hover": {
+              backgroundColor: "transparent",
+            },
+            "&:focus": {
+              outline: "none",
+              backgroundColor: "transparent",
+            },
+          }}
+        >
+          Back to Home
+        </Button>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
